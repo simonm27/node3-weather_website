@@ -1,5 +1,3 @@
-console.log('Client side js file has loaded')
-
 
 //Fetch runs in browser, but can't run in node
 
