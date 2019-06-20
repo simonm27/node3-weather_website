@@ -3,6 +3,7 @@
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
+const clear = document.querySelector('#clear')
 const message1 = document.querySelector('#message-1')
 const message2 = document.querySelector('#message-2')
 
@@ -26,6 +27,11 @@ weatherForm.addEventListener('submit', (e) => {
 })
 console.log(response)
 }) 
+
+clear.addEventListener('click', (e) => {
+    message1.textContent = ''
+    message2.textContent = ''
+})
 
 // let div = document.getElementById('weather')
 
