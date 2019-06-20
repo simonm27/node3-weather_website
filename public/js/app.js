@@ -6,6 +6,7 @@ const search = document.querySelector('input')
 const clear = document.querySelector('#clear')
 const message1 = document.querySelector('#message-1')
 const message2 = document.querySelector('#message-2')
+const clearButton = document.querySelector('#clear')
 
 
 weatherForm.addEventListener('submit', (e) => {
@@ -21,6 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
         }
         message1.textContent = data.location
         message2.textContent = data.forecast
+        clearButton.style.visibility = 'visible'
        
     })
     search.value = ''
@@ -31,7 +33,10 @@ console.log(response)
 clear.addEventListener('click', (e) => {
     message1.textContent = ''
     message2.textContent = ''
+    clearButton.style.visibility = 'hidden'
 })
+
+
 
 // let div = document.getElementById('weather')
 

@@ -71,3 +71,7 @@ button {
 img {
     margin-top: 28px;
 }
+
+#clear {
+    visibility: hidden;
+}
