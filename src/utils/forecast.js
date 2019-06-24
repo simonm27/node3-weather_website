@@ -16,7 +16,7 @@ const url = 'https://api.darksky.net/forecast/f3ba037745e2aaaad67b97e0d22014e4/'
             else {
                 callback(undefined, body.daily.data[0].summary + ' Current temperature is ' + body.currently.temperature + 
                 ' centigrade. The highest temperature today is expected to be ' + body.daily.data[0].temperatureHigh + ' centigrade, and the lowest is '
-                + body.daily.data[0].temperatureLow + ' centigrade. There is a ' + body.currently.precipProbability + '% chance of rain.')
+                + body.daily.data[0].temperatureLow + ' centigrade. There is a ' + body.daily.data[0].precipProbability + '% chance of rain.')
             }
     })
 }
